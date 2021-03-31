@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <head>
+  <style>
+body {margin:0;}
+.header {
+  padding: 20px;
+  text-align: center;
+}
+.icon-bar {
+  width: 100%;
+  background-color: #457b9d;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #e63946;
+}
+div {
+  background-color: lightblue;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 150px;
+  background-color: #A8DADC;
+  text-align: center;
+} 
+
+.left {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  padding: 150px;
+  background-color: #A8DADC;
+  text-align: center;
+} 
+.center {
+  text-align: center;
+  }
+
+ form {
+  background-color: #457b9d;
+  width: 800px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 15px;
+  border: 5px solid #457b9d;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+
+</style>
+
+    <title>
+
+    </title> 
+
+  </head> 
+<body bgcolor="#f1faee">
+<h1 class="header"> WeReview </h1>
+<div class="icon-bar">
+  <a  href="#"><i class="fa fa-home"></i></a> 
+  <a class="active" href="#"><i class="fa fa-plus"></i></a> 
+  <a href="#"><i class="fa fa-map-marker"></i></a> 
+</div>
+<h1 class="center"> Choose Your Category! </h1>
+<form role="search" id="form">
+  <input type="search" id="query" name="q"
+   placeholder="Search Products and Stores..."
+   aria-label="Search through site content">
+  <button>
+    <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+  </button>
+</form>
+ &nbsp;&nbsp; 
+<div class="row">
+  <div class="column">
+    <h2>Makeup</h2>
+  </div>
+  
+  <div class="column">
+    <h2>Accessories</h2>
+  </div>
+  
+  <div class="column">
+    <h2>Footwear</h2>
+  </div>
+</div>
+
+&nbsp;&nbsp; 
+
+  <div class="row">
+  <div class="column">
+    <h2>Tech</h2>
+  </div>
+
+  <div class="column">
+    <h2>Instruments</h2>
+  </div>
+
+  <div class="column">
+    <h2>Hair Products</h2>
+  </div>
+</div>
+
+
+</body> 
+
+</html> 

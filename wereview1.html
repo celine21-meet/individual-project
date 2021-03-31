@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <head>
+  <style>
+body {margin:0;}
+.header {
+  padding: 20px;
+  text-align: center;
+}
+.icon-bar {
+  width: 100%;
+  background-color: #457b9d;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #e63946;
+}
+.div {
+  background-color: lightblue;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 150px;
+  background-color: #A8DADC;
+  text-align: center;
+} 
+
+.left {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  padding: 150px;
+  background-color: #A8DADC;
+  text-align: center;
+} 
+.center {
+  text-align: center;
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #457b9d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #e63946;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.column {
+  display: inline-block;
+  align-items: center;
+  width: 29.90%;
+  height: 100;
+  padding: 15px;
+  border: 15px solid #457b9d;
+  text-align: center;
+}
+
+.stars {
+  display: inline-block;
+  align-items: center;
+  width: 30.90%;
+  height: 100;
+  padding: 15px;
+  border: 5px ;
+  text-align: center;
+}
+</style>
+
+    <title>
+
+    </title> 
+
+  </head> 
+<body bgcolor="#f1faee">
+<h1 class="header"> WeReview </h1>
+<div class="icon-bar">
+  <a  href="#"><i class="fa fa-home"></i></a> 
+  <a class="active" href="#"><i class="fa fa-plus"></i></a> 
+  <a href="#"><i class="fa fa-map-marker"></i></a> 
+</div>
+<h1 class="center"> Makeup </h1>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Local Stores</a>
+  <a href="#">Brands</a>
+  <a href="#">Lips</a>
+  <a href="#">Eyes</a>
+  <a href="#">Face</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; choose</span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<pre>  </pre>
+<div class="column">
+    <img src="lipstick.png"style="width:400px;height:400px;">
+  </div>
+
+  <div class="column ">
+    <img src="mascara.png" style="width:400px;height:400px;">
+  </div>
+  
+ <div class="column ">
+    <img src="foundation.png" style="width:400px;height:400px;">
+  </div>
+  <p class="stars"> 
+<img src="stars.png" style="width:300px;height:50px;">
+  </p>
+  <p class="stars"> 
+
+<img src="stars.png" style="width:300px;height:50px;">
+  </p>
+
+  <p class="stars"> 
+<img src="stars.png" style="width:300px;height:50px;">
+  </p>
+</body> 
+
+</html> 
